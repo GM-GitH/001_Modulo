@@ -163,16 +163,129 @@ nav ul {
 
 .columns {
   width: 176px;
-  margin: auto;
+  margin-left: 100px;
   text-align: center;
   line-height: 70px;
 }
-
+/*--------------TARJETAS--------------*/
 .rectangles {
   position: absolute;
   width: 375px;
-  height: 1400px;
+  height: 1700px;
   left: 0px;
   top: 1426px;
   background: #f7f7f7;
+  border-radius: 5px;
+}
+
+.rectangles div {
+  background-color: #ffffff;
+  width: 314px;
+  height: 370px;
+  margin: 42px auto;
+}
+
+.rectangles .rg1 iframe {
+  width: 95px;
+  height: 95px;
+  background-image: url(../images/Rectangle_5.png);
+  background-repeat: no-repeat;
+  background-size: 95px 95px;
+  margin-top: 20px;
+  margin-left: 165px;
+  position: absolute;
+  z-index: 0;
+}
+.rectangles .rg1 img {
+  position: absolute;
+  margin: 42px 60px 1px 30px;
+  padding: 0 30px;
+}
+
+.rg1 h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 174px;
+  padding-left: 22px;
+  padding-bottom: 10px;
+}
+
+.rg1 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 22px 10px 22px;
+}
+
+.rectangles .rg2 iframe {
+  width: 132px;
+  height: 132px;
+  background-image: url(../images/Ellipse_3.png);
+  background-repeat: no-repeat;
+  background-size: 132px 132px;
+  margin-top: 20px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 0;
+}
+.rectangles .rg2 img {
+  position: absolute;
+  margin: 28px 50px 1px 70px;
+  padding: 0 30px;
+}
+
+.rg2 h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 180px;
+  padding-right: 50px;
+  padding-left: 22px;
+  padding-bottom: 10px;
+}
+
+.rg2 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 22px 20px 22px;
+}
+
+.rg3 h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-left: 22px;
+  padding-bottom: 10px;
+}
+
+.rg3 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 22px 0 22px;
+}
+.rg3 .trumpet {
+  height: 195px;
+  background-color: #55DFB4;
+  border-radius: 5px;
+}
+
+.rg3 .trumpet img {
+  padding-top: 25px;
 }

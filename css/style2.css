@@ -1,21 +1,22 @@
-/*colores
-azul: #08A6E4
-rosa: #EB476E
-verde: #55DFB4
-gris: #F7F7F7
-*/
-
 * {
+  --white-color: #ffffff;
+  --pink-color: #fb3b64;
+  --blue-color: #07ace6;
+  --blue-box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+  --green-color: #55dfb4;
+  --included: url(/images/included.png);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   width: 320px;
   font-family: sans-serif;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
+/*EN ESTE CASO COMENTO EL ESTILO DEL MENU POR TRATARSE DE VARIAS LINEAS*/
 nav {
   width: 375px;
 }
@@ -43,7 +44,7 @@ nav ul {
   position: absolute;
   z-index: 100;
   top: 0;
-  background: #ffffff;
+  background: var(--white-color);
   color: #08a6e4;
   font-family: "Raleway", sans-serif;
   min-height: 70px;
@@ -92,7 +93,7 @@ nav ul {
 .header input:not(:checked) ~ .fa-times {
   display: none;
 }
-
+/*------------------------ O P E N I N G ---------------------*/
 .opening {
   display: block;
   text-align: center;
@@ -133,7 +134,7 @@ nav ul {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--white-color);
   width: 127px;
   height: 22px;
 }
@@ -155,7 +156,6 @@ nav ul {
 }
 .after-bg1 h3 {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
@@ -167,11 +167,11 @@ nav ul {
   text-align: center;
   line-height: 70px;
 }
-/*--------------TARJETAS--------------*/
+/*----------------------------- T A R J E T A S -----------------------------*/
 .rectangles {
   position: absolute;
   width: 375px;
-  height: 1700px;
+  height: 1400px;
   left: 0px;
   top: 1426px;
   background: #f7f7f7;
@@ -179,7 +179,7 @@ nav ul {
 }
 
 .rectangles div {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   width: 314px;
   height: 370px;
   margin: 42px auto;
@@ -204,7 +204,6 @@ nav ul {
 
 .rg1 h3 {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
@@ -215,7 +214,6 @@ nav ul {
 
 .rg1 p {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -241,7 +239,6 @@ nav ul {
 
 .rg2 h3 {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
@@ -253,7 +250,6 @@ nav ul {
 
 .rg2 p {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -262,7 +258,6 @@ nav ul {
 
 .rg3 h3 {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
@@ -274,7 +269,6 @@ nav ul {
 
 .rg3 p {
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -282,10 +276,372 @@ nav ul {
 }
 .rg3 .trumpet {
   height: 195px;
-  background-color: #55DFB4;
+  background-color: #55dfb4;
   border-radius: 5px;
 }
 
 .rg3 .trumpet img {
   padding-top: 25px;
+}
+/*------------------- P R I C I N G --------------------*/
+
+.pricing {
+  background-color: var(--white-color);
+  margin-top: 1450px;
+  margin-left: 41px;
+}
+
+.pricing h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.pricing .iconos {
+  font-weight: 300 !important;
+  font-size: 16px !important;
+}
+
+.included {
+  color: var(--green-color);
+  padding-right: 10px;
+}
+.not-included {
+  color: var(--pink-color);
+  padding-right: 10px;
+}
+
+.pricing .basic {
+  width: 293px;
+  height: 251px;
+  border: 1px solid var(--pink-color);
+  border-radius: 18px;
+  columns: auto 2;
+}
+
+.basic .plan {
+  margin-top: 70px;
+  margin-left: 50px;
+  width: 52px;
+  height: 24px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253b;
+}
+.basic .price {
+  width: 59px;
+  height: 64px;
+  margin-bottom: 92px;
+  margin-left: 45px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: var(--pink-color);
+}
+
+.basic .text {
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  padding-top: 25px;
+  margin-left: -16px;
+}
+
+.basic .price-button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  color: #ffffff;
+  background-color: var(--pink-color);
+  border-radius: 23px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 10px;
+  margin-left: -80px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pricing .pro {
+  width: 339px;
+  height: 277px;
+  border: 1px solid var(--blue-color);
+  border-radius: 18px;
+  margin: 54px 0 54px -23px;
+  box-shadow: var(--blue-box-shadow);
+  columns: auto 2;
+}
+
+.pro .plan {
+  margin-top: 70px;
+  margin-left: 25px;
+  width: 52px;
+  height: 24px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253b;
+}
+.pro .price {
+  width: 59px;
+  height: 64px;
+  margin-bottom: 2px;
+  margin-left: 45px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: var(--blue-color);
+}
+
+.pro .offer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #13253b;
+  margin-left: 50px;
+}
+
+.pro .text {
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  padding-top: 65px;
+  margin-left: -16px;
+}
+
+.pro .price-button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  color: #ffffff;
+  background-color: var(--blue-color);
+  border-radius: 23px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 35px;
+  margin-left: -80px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pricing .premium {
+  width: 293px;
+  height: 251px;
+  border: 1px solid var(--green-color);
+  border-radius: 18px;
+  columns: auto 2;
+}
+
+.premium .plan {
+  margin-top: 70px;
+  margin-left: 40px;
+  width: 52px;
+  height: 24px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #13253b;
+}
+.premium .price {
+  width: 59px;
+  height: 64px;
+  margin-left: 45px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 64px;
+  color: var(--green-color);
+}
+.premium .offer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #13253b;
+  margin-left: 50px;
+}
+.premium .text {
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  padding-top: 60px;
+  margin-left: -16px;
+}
+
+.premium .price-button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  color: #ffffff;
+  background-color: var(--green-color);
+  border-radius: 23px;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: -80px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/*--------------------C O N T A C T  U S ------------------*/
+.contact {
+  width: 280px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 77px;
+  margin-bottom: 14px;
+  margin-left: 30px;
+}
+
+.contact h3 {
+  width: 280px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 77px;
+  margin-bottom: 5px;
+}
+
+.contact h5 {
+  width: 312px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 38px;
+}
+
+.contact .iconos {
+  color: var(--blue-color);
+  width: 22px !important;
+  height: 22px !important;
+  margin-right: 11px;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact label {
+  color: var(--blue-color);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 55px;
+  letter-spacing: 3.28px;
+  margin-bottom: 30px;
+}
+
+.contact .mail,
+.contact .call {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #a5a5a5;
+}
+
+.contact .name,
+.contact .email {
+  width: 312px;
+  height: 50px;
+  left: 0px;
+  top: 56.98px;
+  border-style: none;
+  border-bottom: 1px solid #95989a;
+}
+
+.consent {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* Hide the browser's default checkbox */
+.consent input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.consent input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.consent .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--blue-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.twitter {
+  position: absolute;
+  background-image: url(../images/Twitter.png);
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  position: absolute;
+  background-image: url(../images/Facebook.png);
+  width: 24px;
+  height: 24px;
+  margin-left: 50px;
 }

@@ -581,6 +581,15 @@ nav ul {
   border-bottom: 1px solid #95989a;
 }
 
+.contact p {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #707070;
+}
+
 .consent {
   display: block;
   position: relative;

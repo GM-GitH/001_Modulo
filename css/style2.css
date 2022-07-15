@@ -14,6 +14,7 @@ body {
   width: 320px;
   font-family: sans-serif;
   background-color: var(--white-color);
+  cursor: default;
 }
 
 /*EN ESTE CASO COMENTO EL ESTILO DEL MENU POR TRATARSE DE VARIAS LINEAS*/
@@ -121,22 +122,16 @@ nav ul {
 .opening .button {
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 22px;
-  background-color: #08a6e4;
-  width: 310px;
-  height: 67px;
-  padding: 22px 85px 23px 85px;
-  border-radius: 40px;
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-}
-
-.opening .button h5 {
-  font-family: "Open Sans";
-  font-weight: 700;
   font-size: 16px;
   color: var(--white-color);
-  width: 127px;
-  height: 22px;
+  background-color: var(--blue-color);
+  width: 310px;
+  height: 67px;
+  padding: 22px 92px;
+  border-radius: 40px;
+  box-shadow: var(--blue-box-shadow);
+  border-style: none;
+  cursor: pointer;
 }
 
 .background-1 {
@@ -358,19 +353,18 @@ nav ul {
 
 .basic .price-button {
   position: absolute;
-  width: 150px;
-  height: 50px;
   color: #ffffff;
   background-color: var(--pink-color);
   border-radius: 23px;
-  text-align: center;
-  padding-top: 15px;
+  padding: 16px 56px;
   margin-top: 10px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
+  border-style: none;
+  cursor: pointer;
 }
 
 .pricing .pro {
@@ -434,14 +428,14 @@ nav ul {
   color: #ffffff;
   background-color: var(--blue-color);
   border-radius: 23px;
-  text-align: center;
-  padding-top: 15px;
   margin-top: 35px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
+  border-style: none;
+  cursor: pointer;
 }
 
 .pricing .premium {
@@ -500,29 +494,32 @@ nav ul {
   color: #ffffff;
   background-color: var(--green-color);
   border-radius: 23px;
-  text-align: center;
-  padding-top: 15px;
   margin-top: 15px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
+  border-style: none;
+  cursor: pointer;
 }
 
 /*--------------------C O N T A C T  U S ------------------*/
 .contact {
+  margin-top: 77px;
+  margin-bottom: 44px;
+  margin-left: 30px;
+}
+
+.direct-contact {
   width: 280px;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 77px;
-  margin-bottom: 14px;
-  margin-left: 30px;
 }
 
-.contact h3 {
+.direct-contact h3 {
   width: 280px;
   font-family: "Raleway";
   font-weight: 400;
@@ -532,7 +529,7 @@ nav ul {
   margin-bottom: 5px;
 }
 
-.contact h5 {
+.direct-contact h5 {
   width: 312px;
   font-family: "Open Sans";
   font-weight: 400;
@@ -541,7 +538,7 @@ nav ul {
   margin-bottom: 38px;
 }
 
-.contact .iconos {
+.direct-contact .iconos {
   color: var(--blue-color);
   width: 22px !important;
   height: 22px !important;
@@ -553,7 +550,7 @@ nav ul {
 
 .contact label {
   color: var(--blue-color);
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -562,8 +559,8 @@ nav ul {
   margin-bottom: 30px;
 }
 
-.contact .mail,
-.contact .call {
+.direct-contact .our-mail,
+.direct-contact .our-phone {
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 16px;
@@ -571,57 +568,56 @@ nav ul {
   color: #a5a5a5;
 }
 
-.contact .name,
-.contact .email {
+.contact .form {
   width: 312px;
   height: 50px;
-  left: 0px;
-  top: 56.98px;
   border-style: none;
   border-bottom: 1px solid #95989a;
 }
 
-.contact p {
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-color: #707070;
+.contact form p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
 }
 
 .consent {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 30px;
+  margin-top: 30px;
   margin-bottom: 12px;
+  letter-spacing: 0 !important;
   cursor: pointer;
   font-size: 22px;
 }
 
-.send-buton {
-  width: 226px;
-  height: 57px;
+.send-button {
   background-color: var(--blue-color);
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
-  text-align: center;
-  color: #FFFFFF;
-  padding-top: 15px;
-  margin-top: 35px;
+  border-style: none;
   margin-left: 80px;
+  color: #ffffff;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 13px;
   line-height: 18px;
+  padding: 20px 97px;
+  cursor: pointer;
 }
 
 /**********************************REVIEW*********************************** 
 Hide the browser's default checkbox */
 .consent input {
   position: absolute;
-  cursor: pointer;
   opacity: 0;
+  height: 0;
+  width: 0;
+  margin-left: -35px;
 }
 
 /* Create a custom checkbox */
@@ -656,6 +652,20 @@ Hide the browser's default checkbox */
   border: solid var(--blue-color);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+.consent label {
+  padding-bottom: 25px;
+}
+
+.consent .checkmark p {
+  cursor: default;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
 }
 /*******************************************************************/
 .twitter {

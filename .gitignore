@@ -1,7 +1,7 @@
-/dist
-/css/style.css
-/css/style.css.map
-/.vscode
+dist/
+css/style.css
+css/style.css.map
+.vscode/
 index2.html
 style-index-2.css
 .sass

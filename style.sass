@@ -1,61 +1,732 @@
-*
-  box-sizing: border-box;
+* 
+  --white-color: #ffffff
+  --pink-color: #fb3b64
+  --blue-color: #07ace6
+  --blue-box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29)
+  --green-color: #55dfb4
+  --included: url(/images/included.png)
+  box-sizing: border-box
+  margin: 0
+  padding: 0
 
-body
-  min-width: 320px 
+
+body 
+  width: 320px
   font-family: sans-serif
-  font-color: #08A6E3
+  background-color: var(--white-color)
+  cursor: default
 
 
-.respmenu a 
-  color: inherit
-  text-decoration: none
-  display: block
-  padding: 10px 20px
-  border-bottom: 2px solid #456789
-  max-width: 200px
-  background: #234567
-  font-variant: small-caps
-  text-shadow: 1px 1px black
+/*EN ESTE CASO COMENTO EL ESTILO DEL MENU POR TRATARSE DE VARIAS LINEAS*/
+nav 
+  width: 375px
 
-.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times 
+
+nav ul 
+  height: 175.65px
+  padding-left: 25px
+  padding-top: 40px
+  list-style-type: none
+  font-size: 11px
+  letter-spacing: 4px
+  line-height: 2
+  color: #a5a5a5
+
+.header h1 
+  width: 206px
+  height: 37px
+  padding: 17px 144px 16px 25px
+  font-weight: 300
+  line-height: 37px
+  size: 32px
+
+
+.header 
+  position: absolute
+  z-index: 100
+  top: 0
+  background: var(--white-color)
+  color: #08a6e4
+  font-family: "Raleway", sans-serif
+  min-height: 70px
+  min-width: 375px
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29)
+
+
+.header input[type="checkbox"],
+.header .fa-bars,
+.header .fa-times 
   position: absolute
   box-sizing: border-box
   margin: 0
   padding: 0
   right: 0
-  top: 0
-  width: 48px
-  height: 48px
+  top: 15px
+  text-align: end
 
 
-.respmenu .fa-bars, .respmenu .fa-times 
-  font-size: 48px
+.header .fa-bars,
+.header .fa-times 
+  font-size: 24px
   pointer-events: none
+  margin-right: 40px
+  width: 20px
+  height: 20px
 
 
-.respmenu input[type="checkbox"] 
+.header input[type="checkbox"] 
   opacity: 0
+  height: 25px
 
 
-.respmenu 
-  color: white
-  position: relative
-  background: #123456
-  min-height: 48px
-
-
-.respmenu nav 
+.header nav 
   display: none
 
 
-.respmenu input:checked ~ nav 
+.header input:checked ~ nav 
   display: block
 
 
-.respmenu input:checked ~ .fa-bars 
+.header input:checked ~ .fa-bars 
   display: none
 
 
-.respmenu input:not(:checked) ~ .fa-times 
+.header input:not(:checked) ~ .fa-times 
   display: none
+
+/*------------------------ O P E N I N G ---------------------*/
+.opening 
+  display: block
+  width: 310px
+  text-align: center
+  height: 213px
+  margin: 170px 32px 50px 33px
+
+
+.opening h2 
+  font-family: "Raleway"
+  font-weight: 400
+  font-size: 35px
+  margin-bottom: 20px
+
+.opening p 
+  font-family: "Open Sans"
+  font-weight: 400
+  font-size: 16px
+  line-height: 23px
+  padding: 0 10px
+  margin-bottom: 40px
+
+
+.opening .button 
+  font-family: "Open Sans"
+  font-weight: 700
+  font-size: 16px
+  color: var(--white-color)
+  background-color: var(--blue-color)
+  padding: 22px 92px
+  border-radius: 40px
+  box-shadow: var(--blue-box-shadow)
+  border-style: none
+  cursor: pointer
+
+
+.background-1 
+  width: 370px
+  height: 267px
+  background: url(../images/Background_1.png)
+  background-size: cover
+  background-repeat: no-repeat
+  margin: 40px 0 13px 0
+
+
+.after-bg1 
+  width: 303px
+  height: 112px
+  text-align: center
+  margin: 0 36px 25px 36px
+  margin-bottom: 25px
+
+.after-bg1 h3 
+  font-family: "Raleway"
+  font-weight: 300
+  font-size: 30px
+  line-height: 35px
+
+
+.columns 
+  width: 176px
+  margin-left: 100px
+  text-align: center
+  line-height: 70px
+
+/*----------------------------- T A R J E T A S -----------------------------*/
+.rectangles 
+  position: absolute
+  width: 375px
+  height: 1400px
+  left: 0px
+  top: 1426px
+  background: #f7f7f7
+  border-radius: 5px
+
+
+.rectangles div 
+  background-color: var(--white-color)
+  width: 314px
+  height: 370px
+  margin: 42px auto
+
+
+.rectangles .rg1 iframe 
+  width: 95px
+  height: 95px
+  background-image: url(../images/Rectangle_5.png)
+  background-repeat: no-repeat
+  background-size: 95px 95px
+  margin-top: 20px
+  margin-left: 165px
+  position: absolute
+  z-index: 0
+
+.rectangles .rg1 img 
+  position: absolute
+  margin: 42px 60px 1px 30px
+  padding: 0 30px
+
+
+.rg1 h3 
+  font-family: "Raleway"
+  font-weight: 400
+  font-size: 30px
+  line-height: 35px
+  padding-top: 174px
+  padding-left: 22px
+  padding-bottom: 10px
+
+
+.rg1 p 
+  font-family: "Open Sans"
+  font-weight: 400
+  font-size: 14px
+  line-height: 21px
+  padding: 20px 22px 10px 22px
+
+
+.rectangles .rg2 iframe 
+  width: 132px
+  height: 132px
+  background-image: url(../images/Ellipse_3.png)
+  background-repeat: no-repeat
+  background-size: 132px 132px
+  margin-top: 20px
+  margin-left: 100px
+  position: absolute
+  z-index: 0
+
+.rectangles .rg2 img 
+  position: absolute
+  margin: 28px 50px 1px 70px
+  padding: 0 30px
+
+
+.rg2 h3 
+  font-family: "Raleway"
+  font-weight: 400
+  font-size: 30px
+  line-height: 35px
+  padding-top: 180px
+  padding-right: 50px
+  padding-left: 22px
+  padding-bottom: 10px
+
+
+.rg2 p 
+  font-family: "Open Sans"
+  font-weight: 400
+  font-size: 14px
+  line-height: 19px
+  padding: 10px 22px 20px 22px
+
+
+.rg3 h3 
+  font-family: "Raleway"
+  font-weight: 400
+  font-size: 30px
+  line-height: 35px
+  padding-top: 30px
+  padding-right: 50px
+  padding-left: 22px
+  padding-bottom: 10px
+
+
+.rg3 p 
+  font-family: "Open Sans"
+  font-weight: 400
+  font-size: 16px
+  line-height: 22px
+  padding: 10px 22px 0 22px
+
+.rg3 .trumpet 
+  height: 195px
+  background-color: #55dfb4
+  border-radius: 5px
+
+
+.rg3 .trumpet img 
+  padding-top: 25px
+
+/*------------------- P R I C I N G --------------------*/
+
+.pricing 
+  background-color: var(--white-color)
+  margin-top: 1450px
+  margin-left: 41px
+
+
+.pricing h2 
+  font-family: "Raleway"
+  font-weight: 400
+  font-size: 36px
+  line-height: 42px
+  text-align: center
+  margin-bottom: 14px
+
+
+.pricing .iconos 
+  font-weight: 300 !important
+  font-size: 16px !important
+
+
+.included 
+  color: var(--green-color)
+  padding-right: 10px
+
+.not-included 
+  color: var(--pink-color)
+  padding-right: 10px
+
+
+.pricing .basic 
+  width: 293px
+  height: 251px
+  border: 1px solid var(--pink-color)
+  border-radius: 18px
+  columns: auto 2
+
+
+.basic .plan 
+  margin-top: 70px
+  margin-left: 50px
+  width: 52px
+  height: 24px
+  font-family: "Raleway"
+  font-weight: 700
+  font-size: 20px
+  line-height: 24px
+  color: #13253b
+
+.basic .price 
+  width: 59px
+  height: 64px
+  margin-bottom: 92px
+  margin-left: 45px
+  font-family: "Open Sans"
+  font-weight: 300
+  font-size: 46px
+  line-height: 64px
+  color: var(--pink-color)
+
+
+.basic .text 
+  text-align: left
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 38px
+  padding-top: 25px
+  margin-left: -16px
+
+
+.basic .price-button 
+  position: absolute
+  color: #ffffff
+  background-color: var(--pink-color)
+  border-radius: 23px
+  padding: 16px 56px
+  margin-top: 10px
+  margin-left: -80px
+  font-family: "Open Sans"
+  font-weight: 700
+  font-size: 13px
+  line-height: 18px
+  border-style: none
+  cursor: pointer
+
+
+.pricing .pro 
+  width: 339px
+  height: 277px
+  border: 1px solid var(--blue-color)
+  border-radius: 18px
+  margin: 54px 0 54px -23px
+  box-shadow: var(--blue-box-shadow)
+  columns: auto 2
+
+
+.pro .plan 
+  margin-top: 70px
+  margin-left: 25px
+  width: 52px
+  height: 24px
+  font-family: "Raleway"
+  font-weight: 700
+  font-size: 20px
+  line-height: 24px
+  color: #13253b
+
+.pro .price 
+  width: 59px
+  height: 64px
+  margin-bottom: 2px
+  margin-left: 45px
+  font-family: "Open Sans"
+  font-weight: 300
+  font-size: 46px
+  line-height: 64px
+  color: var(--blue-color)
+
+
+.pro .offer 
+  font-family: "Raleway"
+  font-style: normal
+  font-weight: 700
+  font-size: 12px
+  line-height: 14px
+  color: #13253b
+  margin-left: 50px
+
+
+.pro .text 
+  text-align: left
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 38px
+  padding-top: 65px
+  margin-left: -16px
+
+
+.pro .price-button 
+  position: absolute
+  width: 150px
+  height: 50px
+  color: #ffffff
+  background-color: var(--blue-color)
+  border-radius: 23px
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29)
+  margin-top: 35px
+  margin-left: -80px
+  font-family: "Open Sans"
+  font-weight: 700
+  font-size: 13px
+  line-height: 18px
+  border-style: none
+  cursor: pointer
+
+
+.pricing .premium 
+  width: 293px
+  height: 251px
+  border: 1px solid var(--green-color)
+  border-radius: 18px
+  columns: auto 2
+
+
+.premium .plan 
+  margin-top: 70px
+  margin-left: 40px
+  width: 52px
+  height: 24px
+  font-family: "Raleway"
+  font-weight: 700
+  font-size: 20px
+  line-height: 24px
+  color: #13253b
+
+.premium .price 
+  width: 59px
+  height: 64px
+  margin-left: 45px
+  font-family: "Open Sans"
+  font-weight: 300
+  font-size: 46px
+  line-height: 64px
+  color: var(--green-color)
+
+.premium .offer 
+  font-family: "Raleway"
+  font-style: normal
+  font-weight: 700
+  font-size: 12px
+  line-height: 14px
+  color: #13253b
+  margin-left: 50px
+
+.premium .text 
+  text-align: left
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 38px
+  padding-top: 60px
+  margin-left: -16px
+
+
+.premium .price-button 
+  position: absolute
+  width: 150px
+  height: 50px
+  color: #ffffff
+  background-color: var(--green-color)
+  border-radius: 23px
+  margin-top: 15px
+  margin-left: -80px
+  font-family: "Open Sans"
+  font-weight: 700
+  font-size: 13px
+  line-height: 18px
+  border-style: none
+  cursor: pointer
+
+
+/*--------------------C O N T A C T  U S ------------------*/
+.contact 
+  margin-top: 77px
+  margin-bottom: 44px
+  margin-left: 30px
+
+
+.direct-contact 
+  width: 280px
+  font-family: "Open Sans"
+  font-weight: 400
+  font-size: 16px
+  line-height: 22px
+  margin-bottom: 40px
+
+
+.direct-contact h3 
+  width: 280px
+  font-family: "Raleway"
+  font-weight: 400
+  font-size: 40px
+  line-height: 47px
+  margin-top: 77px
+  margin-bottom: 5px
+
+
+.direct-contact h5 
+  width: 312px
+  font-family: "Open Sans"
+  font-weight: 400
+  font-size: 16px
+  line-height: 22px
+  margin-bottom: 35px
+
+
+.direct-contact .iconos 
+  color: var(--blue-color)
+  width: 22px !important
+  height: 22px !important
+  margin-right: 11px
+  margin-bottom: 5px
+  display: inline-block
+  vertical-align: middle
+
+
+.contact label 
+  color: var(--blue-color)
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 600
+  font-size: 11px
+  letter-spacing: 3.28px
+
+
+.direct-contact .our-mail,
+.direct-contact .our-phone 
+  font-family: "Open Sans"
+  font-weight: 600
+  font-size: 16px
+  line-height: 40px
+  color: #a5a5a5
+
+
+.contact .form 
+  width: 312px
+  height: 50px
+  border-style: none
+  border-bottom: 1px solid #95989a
+
+
+.contact form p 
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 400
+  font-size: 12px
+  line-height: 16px
+  color: #707070
+
+
+.consent 
+  display: block
+  position: relative
+  padding-left: 30px
+  margin-top: 30px
+  margin-bottom: 12px
+  letter-spacing: 0 !important
+  cursor: pointer
+  font-size: 22px
+
+
+.send-button 
+  background-color: var(--blue-color)
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29)
+  border-radius: 35px
+  border-style: none
+  margin-left: 80px
+  color: #ffffff
+  font-family: "Open Sans"
+  font-weight: 700
+  font-size: 13px
+  line-height: 18px
+  padding: 20px 97px
+  cursor: pointer
+
+
+/**********************************REVIEW***********************************/
+/*Hide the browser's default checkbox */
+.consent input 
+  position: absolute
+  opacity: 0
+  height: 0
+  width: 0
+  margin-left: -35px
+
+
+/* Create a custom checkbox */
+.checkmark 
+  position: absolute
+  top: 0
+  left: 0
+  height: 25px
+  width: 25px
+  border: 1px solid gray
+  border-radius: 5px
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+
+/* Show the checkmark when checked */
+.consent input:checked ~ .checkmark:after 
+  display: block
+
+
+/* Style the checkmark/indicator */
+.consent .checkmark:after 
+  left: 9px
+  top: 5px
+  width: 5px
+  height: 10px
+  border: solid var(--blue-color)
+  border-width: 0 1.5px 1.5px 0
+  transform: rotate(45deg)
+
+
+.consent label 
+  padding-bottom: 25px
+
+
+.consent .checkmark p 
+  cursor: default
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 400
+  font-size: 12px
+  line-height: 16px
+  color: #707070
+
+/*******************************************************************/
+.twitter 
+  position: absolute
+  background-image: url(../images/Twitter.png)
+  width: 24px
+  height: 24px
+
+
+.facebook 
+  position: absolute
+  background-image: url(../images/Facebook.png)
+  width: 24px
+  height: 24px
+  margin-left: 40px
+
+footer 
+  background: #F7F7F7
+  min-height: 89px
+  min-width: 375px
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2)
+  padding-left: 17px
+  columns: auto 2  
+  box-sizing: border-box
+
+.footer-text h2 
+  position: absolute
+  color: #08a6e4
+  font-family: "Raleway", sans-serif
+  font-weight: 300
+  font-size: 26px
+  line-height: 30px
+  padding-top: 22.5px
+
+.footer-text p 
+  position: absolute
+  font-family: "Open Sans"
+  font-style: normal
+  font-weight: 400
+  font-size: 11px
+  line-height: 15px
+  color: #a5a5a5
+  padding-top: 53px
+  padding-bottom: 21px
+
+
+footer .social-icons 
+  position: absolute
+  padding: 33px 30px 32px 260px
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 1000px) 
+
+  .header 
+    width: 100%
+  
+  .background-1 
+    width: 100vw
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center 
+  
+  .opening 
+    width: 100vw
+  

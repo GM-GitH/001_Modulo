@@ -5,7 +5,8 @@
   --blue-box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
   --green-color: #55dfb4;
   --included: url(/images/included.png);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -32,6 +33,7 @@ nav ul {
   line-height: 2;
   color: #a5a5a5;
 }
+
 .header h1 {
   width: 206px;
   height: 37px;
@@ -50,33 +52,35 @@ nav ul {
   font-family: "Raleway", sans-serif;
   min-height: 70px;
   min-width: 375px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
 }
 
 .header input[type="checkbox"],
 .header .fa-bars,
 .header .fa-times {
   position: absolute;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   right: 0;
   top: 15px;
-  width: 20px;
-  height: 20px;
+  text-align: end;
 }
 
 .header .fa-bars,
 .header .fa-times {
   font-size: 24px;
-  margin: 5px 40px;
   pointer-events: none;
   margin-right: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .header input[type="checkbox"] {
   opacity: 0;
-  margin: 5px 40px;
+  height: 25px;
 }
 
 .header nav {
@@ -94,11 +98,12 @@ nav ul {
 .header input:not(:checked) ~ .fa-times {
   display: none;
 }
+
 /*------------------------ O P E N I N G ---------------------*/
 .opening {
   display: block;
-  text-align: center;
   width: 310px;
+  text-align: center;
   height: 213px;
   margin: 170px 32px 50px 33px;
 }
@@ -109,13 +114,13 @@ nav ul {
   font-size: 35px;
   margin-bottom: 20px;
 }
+
 .opening p {
-  width: 308px;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   margin-bottom: 40px;
 }
 
@@ -125,11 +130,10 @@ nav ul {
   font-size: 16px;
   color: var(--white-color);
   background-color: var(--blue-color);
-  width: 310px;
-  height: 67px;
   padding: 22px 92px;
   border-radius: 40px;
-  box-shadow: var(--blue-box-shadow);
+  -webkit-box-shadow: var(--blue-box-shadow);
+          box-shadow: var(--blue-box-shadow);
   border-style: none;
   cursor: pointer;
 }
@@ -137,7 +141,8 @@ nav ul {
 .background-1 {
   width: 370px;
   height: 267px;
-  background-image: url(../images/Background_1.png);
+  background: url(../images/Background_1.png);
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 40px 0 13px 0;
 }
@@ -149,6 +154,7 @@ nav ul {
   margin: 0 36px 25px 36px;
   margin-bottom: 25px;
 }
+
 .after-bg1 h3 {
   font-family: "Raleway";
   font-weight: 300;
@@ -162,6 +168,7 @@ nav ul {
   text-align: center;
   line-height: 70px;
 }
+
 /*----------------------------- T A R J E T A S -----------------------------*/
 .rectangles {
   position: absolute;
@@ -191,6 +198,7 @@ nav ul {
   position: absolute;
   z-index: 0;
 }
+
 .rectangles .rg1 img {
   position: absolute;
   margin: 42px 60px 1px 30px;
@@ -226,6 +234,7 @@ nav ul {
   position: absolute;
   z-index: 0;
 }
+
 .rectangles .rg2 img {
   position: absolute;
   margin: 28px 50px 1px 70px;
@@ -269,6 +278,7 @@ nav ul {
   line-height: 22px;
   padding: 10px 22px 0 22px;
 }
+
 .rg3 .trumpet {
   height: 195px;
   background-color: #55dfb4;
@@ -278,8 +288,8 @@ nav ul {
 .rg3 .trumpet img {
   padding-top: 25px;
 }
-/*------------------- P R I C I N G --------------------*/
 
+/*------------------- P R I C I N G --------------------*/
 .pricing {
   background-color: var(--white-color);
   margin-top: 1450px;
@@ -304,6 +314,7 @@ nav ul {
   color: var(--green-color);
   padding-right: 10px;
 }
+
 .not-included {
   color: var(--pink-color);
   padding-right: 10px;
@@ -314,7 +325,8 @@ nav ul {
   height: 251px;
   border: 1px solid var(--pink-color);
   border-radius: 18px;
-  columns: auto 2;
+  -webkit-columns: auto 2;
+          columns: auto 2;
 }
 
 .basic .plan {
@@ -328,6 +340,7 @@ nav ul {
   line-height: 24px;
   color: #13253b;
 }
+
 .basic .price {
   width: 59px;
   height: 64px;
@@ -373,8 +386,10 @@ nav ul {
   border: 1px solid var(--blue-color);
   border-radius: 18px;
   margin: 54px 0 54px -23px;
-  box-shadow: var(--blue-box-shadow);
-  columns: auto 2;
+  -webkit-box-shadow: var(--blue-box-shadow);
+          box-shadow: var(--blue-box-shadow);
+  -webkit-columns: auto 2;
+          columns: auto 2;
 }
 
 .pro .plan {
@@ -388,6 +403,7 @@ nav ul {
   line-height: 24px;
   color: #13253b;
 }
+
 .pro .price {
   width: 59px;
   height: 64px;
@@ -428,7 +444,8 @@ nav ul {
   color: #ffffff;
   background-color: var(--blue-color);
   border-radius: 23px;
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  -webkit-box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+          box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   margin-top: 35px;
   margin-left: -80px;
   font-family: "Open Sans";
@@ -444,7 +461,8 @@ nav ul {
   height: 251px;
   border: 1px solid var(--green-color);
   border-radius: 18px;
-  columns: auto 2;
+  -webkit-columns: auto 2;
+          columns: auto 2;
 }
 
 .premium .plan {
@@ -458,6 +476,7 @@ nav ul {
   line-height: 24px;
   color: #13253b;
 }
+
 .premium .price {
   width: 59px;
   height: 64px;
@@ -468,6 +487,7 @@ nav ul {
   line-height: 64px;
   color: var(--green-color);
 }
+
 .premium .offer {
   font-family: "Raleway";
   font-style: normal;
@@ -477,6 +497,7 @@ nav ul {
   color: #13253b;
   margin-left: 50px;
 }
+
 .premium .text {
   text-align: left;
   font-family: "Open Sans";
@@ -597,7 +618,8 @@ nav ul {
 
 .send-button {
   background-color: var(--blue-color);
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  -webkit-box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+          box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
   border-style: none;
   margin-left: 80px;
@@ -610,8 +632,8 @@ nav ul {
   cursor: pointer;
 }
 
-/**********************************REVIEW*********************************** 
-Hide the browser's default checkbox */
+/**********************************REVIEW***********************************/
+/*Hide the browser's default checkbox */
 .consent input {
   position: absolute;
   opacity: 0;
@@ -651,7 +673,8 @@ Hide the browser's default checkbox */
   height: 10px;
   border: solid var(--blue-color);
   border-width: 0 1.5px 1.5px 0;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .consent label {
@@ -667,6 +690,7 @@ Hide the browser's default checkbox */
   line-height: 16px;
   color: #707070;
 }
+
 /*******************************************************************/
 .twitter {
   position: absolute;
@@ -680,17 +704,22 @@ Hide the browser's default checkbox */
   background-image: url(../images/Facebook.png);
   width: 24px;
   height: 24px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
+
 footer {
-  background: var(--white-color);
+  background: #F7F7F7;
   min-height: 89px;
   min-width: 375px;
-  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
   padding-left: 17px;
-  columns: auto 2;  
-  box-sizing: border-box;
+  -webkit-columns: auto 2;
+          columns: auto 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .footer-text h2 {
   position: absolute;
   color: #08a6e4;
@@ -700,6 +729,7 @@ footer {
   line-height: 30px;
   padding-top: 22.5px;
 }
+
 .footer-text p {
   position: absolute;
   font-family: "Open Sans";
@@ -714,5 +744,21 @@ footer {
 
 footer .social-icons {
   position: absolute;
-  padding: 33px 30px 32px 250px;
+  padding: 33px 30px 32px 260px;
 }
+
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+  .header {
+    width: 100%;
+  }
+  .background-1 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .opening {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

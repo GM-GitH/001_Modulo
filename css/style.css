@@ -12,182 +12,133 @@
 }
 
 body {
-  width: 320px;
+  /*width: 320px*/
+  width: 375px;
   font-family: sans-serif;
   background-color: var(--white-color);
   cursor: default;
 }
 
-/*EN ESTE CASO COMENTO EL ESTILO DEL MENU POR TRATARSE DE VARIAS LINEAS*/
-nav {
-  width: 375px;
-}
-
-nav ul {
-  height: 175.65px;
-  padding-left: 25px;
-  padding-top: 40px;
-  list-style-type: none;
-  font-size: 11px;
-  letter-spacing: 4px;
-  line-height: 2;
-  color: #a5a5a5;
-}
-
-.header h1 {
-  width: 206px;
-  height: 37px;
-  padding: 17px 144px 16px 25px;
-  font-weight: 300;
-  line-height: 37px;
-  size: 32px;
-}
-
 .header {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  background: var(--white-color);
-  color: #08a6e4;
-  font-family: "Raleway", sans-serif;
+  min-width: 320px;
   min-height: 70px;
-  min-width: 375px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+  /*line-height: 116%*/
+  left: 0px;
+  top: 0px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
 
-.header input[type="checkbox"],
-.header .fa-bars,
-.header .fa-times {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  right: 0;
-  top: 15px;
-  text-align: end;
+.header .logo {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 37px;
+  color: var(--blue-color);
+  padding: 17px 144px 16px 25px;
 }
 
-.header .fa-bars,
-.header .fa-times {
-  font-size: 24px;
-  pointer-events: none;
-  margin-right: 40px;
-  width: 20px;
-  height: 20px;
-}
-
-.header input[type="checkbox"] {
-  opacity: 0;
-  height: 25px;
-}
-
-.header nav {
-  display: none;
-}
-
-.header input:checked ~ nav {
-  display: block;
-}
-
-.header input:checked ~ .fa-bars {
-  display: none;
-}
-
-.header input:not(:checked) ~ .fa-times {
-  display: none;
-}
-
-/*------------------------ O P E N I N G ---------------------*/
 .opening {
   display: block;
-  width: 310px;
   text-align: center;
-  height: 213px;
-  margin: 170px 32px 50px 33px;
+  padding: 100px 33px 51px;
 }
 
-.opening h2 {
+.opening h1 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 35px;
-  margin-bottom: 20px;
+  /*line-height: 100%*/
+  padding-bottom: 20px;
 }
 
-.opening p {
+.opening h2 {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
-  line-height: 23px;
-  padding: 0 10px;
-  margin-bottom: 40px;
+  /*line-height: 144%*/
+  padding: 0 35px 28px;
 }
 
 .opening .button {
+  background-color: var(--blue-color);
+  -webkit-box-shadow: var(--blue-box-shadow);
+          box-shadow: var(--blue-box-shadow);
+  color: var(--white-color);
+  border-radius: 40px;
+  border-style: none;
+  cursor: pointer;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 16px;
-  color: var(--white-color);
-  background-color: var(--blue-color);
+  /*line-height: 138%*/
   padding: 22px 92px;
-  border-radius: 40px;
-  -webkit-box-shadow: var(--blue-box-shadow);
-          box-shadow: var(--blue-box-shadow);
-  border-style: none;
-  cursor: pointer;
 }
 
-.background-1 {
-  width: 370px;
+.background1 {
+  width: 375px;
   height: 267px;
-  background: url(../images/Background_1.png);
-  background-size: cover;
+  background-image: url(../images/Background_1.png);
   background-repeat: no-repeat;
-  margin: 40px 0 13px 0;
 }
 
 .after-bg1 {
-  width: 303px;
-  height: 112px;
   text-align: center;
-  margin: 0 36px 25px 36px;
-  margin-bottom: 25px;
-}
-
-.after-bg1 h3 {
+  padding: 0 36px 25px 36px;
   font-family: "Raleway";
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
 }
 
-.columns {
-  width: 176px;
-  margin-left: 100px;
-  text-align: center;
-  line-height: 70px;
+.column1 {
+  width: 117px;
+  height: 140px;
+  background-image: url(../images/Column_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 129px 25px;
+  margin: 0 auto;
 }
 
-/*----------------------------- T A R J E T A S -----------------------------*/
-.rectangles {
-  position: absolute;
-  width: 375px;
-  height: 1400px;
-  left: 0px;
-  top: 1426px;
+.column2 {
+  width: 176px;
+  height: 167px;
+  background-image: url(../images/Column_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 129px 25px;
+  margin: 25px auto;
+}
+
+.column3 {
+  width: 163px;
+  height: 168px;
+  background-image: url(../images/Column_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 129px 25px;
+  margin: 0 auto 50px;
+}
+
+/*-----------------------------------------------------------------*/
+.rectangle3 {
   background: #f7f7f7;
+  /*-----WITHOUT THIS PADDING THERE IS NO DISTANCE AT TOP----*/
+  padding: 1px;
   border-radius: 5px;
 }
 
-.rectangles div {
+.rectangle3 .cards {
   background-color: var(--white-color);
   width: 314px;
   height: 370px;
   margin: 42px auto;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
 }
 
-.rectangles .rg1 iframe {
+.rectangle3 .group1 iframe {
   width: 95px;
   height: 95px;
   background-image: url(../images/Rectangle_5.png);
@@ -199,13 +150,13 @@ nav ul {
   z-index: 0;
 }
 
-.rectangles .rg1 img {
+.rectangle3 .group1 img {
   position: absolute;
   margin: 42px 60px 1px 30px;
   padding: 0 30px;
 }
 
-.rg1 h3 {
+.rectangle3 .group1 h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -215,7 +166,7 @@ nav ul {
   padding-bottom: 10px;
 }
 
-.rg1 p {
+.rectangle3 .group1 p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
@@ -223,7 +174,7 @@ nav ul {
   padding: 20px 22px 10px 22px;
 }
 
-.rectangles .rg2 iframe {
+.rectangle3 .group2 iframe {
   width: 132px;
   height: 132px;
   background-image: url(../images/Ellipse_3.png);
@@ -235,13 +186,13 @@ nav ul {
   z-index: 0;
 }
 
-.rectangles .rg2 img {
+.rectangle3 .group2 img {
   position: absolute;
   margin: 28px 50px 1px 70px;
   padding: 0 30px;
 }
 
-.rg2 h3 {
+.rectangle3 .group2 h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -252,7 +203,7 @@ nav ul {
   padding-bottom: 10px;
 }
 
-.rg2 p {
+.rectangle3 .group2 p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
@@ -260,7 +211,7 @@ nav ul {
   padding: 10px 22px 20px 22px;
 }
 
-.rg3 h3 {
+.rectangle3 .group3 h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -271,7 +222,7 @@ nav ul {
   padding-bottom: 10px;
 }
 
-.rg3 p {
+.rectangle3 .group3 p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
@@ -279,35 +230,31 @@ nav ul {
   padding: 10px 22px 0 22px;
 }
 
-.rg3 .trumpet {
+.trumpet {
   height: 195px;
-  background-color: #55dfb4;
+  background-color: var(--green-color);
   border-radius: 5px;
+  margin: -130px 31px 45px;
 }
 
-.rg3 .trumpet img {
+.trumpet img {
   padding-top: 25px;
 }
 
-/*------------------- P R I C I N G --------------------*/
 .pricing {
   background-color: var(--white-color);
-  margin-top: 1450px;
-  margin-left: 41px;
-}
-
-.pricing h2 {
+  margin-top: 53px;
+  text-align: center;
   font-family: "Raleway";
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  margin-bottom: 14px;
 }
 
-.pricing .iconos {
+.iconos {
   font-weight: 300 !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
 }
 
 .included {
@@ -320,9 +267,8 @@ nav ul {
   padding-right: 10px;
 }
 
-.pricing .basic {
-  width: 293px;
-  height: 251px;
+.basic {
+  margin: 14px 41px 54px;
   border: 1px solid var(--pink-color);
   border-radius: 18px;
   -webkit-columns: auto 2;
@@ -330,10 +276,8 @@ nav ul {
 }
 
 .basic .plan {
-  margin-top: 70px;
-  margin-left: 50px;
-  width: 52px;
-  height: 24px;
+  padding-top: 70px;
+  padding-left: 50px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 20px;
@@ -342,9 +286,7 @@ nav ul {
 }
 
 .basic .price {
-  width: 59px;
-  height: 64px;
-  margin-bottom: 92px;
+  margin-top: 1px;
   margin-left: 45px;
   font-family: "Open Sans";
   font-weight: 300;
@@ -359,9 +301,14 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 38px;
-  padding-top: 25px;
+  line-height: 19px;
+  padding-top: 15px;
   margin-left: -16px;
+  padding-bottom: 41px;
+}
+
+.basic .text p {
+  padding: 10px 0;
 }
 
 .basic .price-button {
@@ -370,7 +317,7 @@ nav ul {
   background-color: var(--pink-color);
   border-radius: 23px;
   padding: 16px 56px;
-  margin-top: 10px;
+  margin-top: -25px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -380,19 +327,19 @@ nav ul {
   cursor: pointer;
 }
 
-.pricing .pro {
+.professional {
   width: 339px;
   height: 277px;
   border: 1px solid var(--blue-color);
   border-radius: 18px;
-  margin: 54px 0 54px -23px;
+  margin: 54px 0 54px 18px;
   -webkit-box-shadow: var(--blue-box-shadow);
           box-shadow: var(--blue-box-shadow);
   -webkit-columns: auto 2;
           columns: auto 2;
 }
 
-.pro .plan {
+.professional .plan {
   margin-top: 70px;
   margin-left: 25px;
   width: 52px;
@@ -404,7 +351,7 @@ nav ul {
   color: #13253b;
 }
 
-.pro .price {
+.professional .price {
   width: 59px;
   height: 64px;
   margin-bottom: 2px;
@@ -416,7 +363,7 @@ nav ul {
   color: var(--blue-color);
 }
 
-.pro .offer {
+.professional .offer {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -424,20 +371,22 @@ nav ul {
   line-height: 14px;
   color: #13253b;
   margin-left: 50px;
+  padding-bottom: 83px;
 }
 
-.pro .text {
+.professional .text {
   text-align: left;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 38px;
-  padding-top: 65px;
+  padding-top: 51px;
   margin-left: -16px;
+  padding-bottom: 45px;
 }
 
-.pro .price-button {
+.professional .price-button {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -446,7 +395,7 @@ nav ul {
   border-radius: 23px;
   -webkit-box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
           box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-  margin-top: 35px;
+  margin-top: -20px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -456,20 +405,21 @@ nav ul {
   cursor: pointer;
 }
 
-.pricing .premium {
-  width: 293px;
-  height: 251px;
+.premium {
+  margin: 14px 41px 77px;
   border: 1px solid var(--green-color);
   border-radius: 18px;
   -webkit-columns: auto 2;
           columns: auto 2;
 }
 
+.premium .plan-type {
+  padding-top: 70px;
+  padding-bottom: 85px;
+}
+
 .premium .plan {
-  margin-top: 70px;
-  margin-left: 40px;
-  width: 52px;
-  height: 24px;
+  margin-left: 31px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 20px;
@@ -478,13 +428,11 @@ nav ul {
 }
 
 .premium .price {
-  width: 59px;
-  height: 64px;
-  margin-left: 45px;
+  margin-left: 35px;
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 46px;
-  line-height: 64px;
+  line-height: 62px;
   color: var(--green-color);
 }
 
@@ -495,7 +443,7 @@ nav ul {
   font-size: 12px;
   line-height: 14px;
   color: #13253b;
-  margin-left: 50px;
+  margin-left: 38px;
 }
 
 .premium .text {
@@ -504,9 +452,14 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 38px;
-  padding-top: 60px;
+  line-height: 19px;
+  padding-top: 15px;
   margin-left: -16px;
+  padding-bottom: 37px;
+}
+
+.premium .text p {
+  padding: 10px 0;
 }
 
 .premium .price-button {
@@ -516,7 +469,7 @@ nav ul {
   color: #ffffff;
   background-color: var(--green-color);
   border-radius: 23px;
-  margin-top: 15px;
+  margin-top: -25px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -526,7 +479,6 @@ nav ul {
   cursor: pointer;
 }
 
-/*--------------------C O N T A C T  U S ------------------*/
 .contact {
   margin-top: 77px;
   margin-bottom: 44px;
@@ -571,13 +523,15 @@ nav ul {
   vertical-align: middle;
 }
 
-.contact label {
+.contact .input {
   color: var(--blue-color);
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 3.28px;
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
 }
 
 .direct-contact .our-mail,
@@ -608,7 +562,8 @@ nav ul {
 .consent {
   display: block;
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin-top: 30px;
   margin-bottom: 12px;
   letter-spacing: 0 !important;
@@ -692,21 +647,6 @@ nav ul {
 }
 
 /*******************************************************************/
-.twitter {
-  position: absolute;
-  background-image: url(../images/Twitter.png);
-  width: 24px;
-  height: 24px;
-}
-
-.facebook {
-  position: absolute;
-  background-image: url(../images/Facebook.png);
-  width: 24px;
-  height: 24px;
-  margin-left: 40px;
-}
-
 footer {
   background: #F7F7F7;
   min-height: 89px;
@@ -744,21 +684,21 @@ footer {
 
 footer .social-icons {
   position: absolute;
-  padding: 33px 30px 32px 260px;
+  padding: 33px 30px 32px 250px;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 1000px) {
-  .header {
-    width: 100%;
-  }
-  .background-1 {
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-  .opening {
-    width: 100vw;
-  }
+.twitter {
+  position: absolute;
+  background-image: url(../images/Twitter.png);
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  position: absolute;
+  background-image: url(../images/Facebook.png);
+  width: 24px;
+  height: 24px;
+  margin-left: 50px;
 }
 /*# sourceMappingURL=style.css.map */

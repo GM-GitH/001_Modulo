@@ -761,17 +761,17 @@ footer .social-icons {
 
 @media only screen and (min-width: 320px) and (max-width: 1000px) {
   body {
-    min-width: 97vw;
+    min-width: 100%;
   }
   .header {
     width: 100%;
   }
   .opening {
-    width: 97vw;
+    width: 100%;
     min-height: 500px;
   }
   .background-1 {
-    width: 97vw;
+    width: 100%;
     background-image: url(../images/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -779,7 +779,7 @@ footer .social-icons {
   }
   .after-bg1 {
     display: block;
-    width: 97vw;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 50px;
     padding-bottom: 0;
@@ -797,15 +797,15 @@ footer .social-icons {
     align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    width: 97vw;
+    width: 100%;
     margin: 0 0 50px 0;
   }
   .rectangles {
-    width: 97vw;
+    width: 100%;
     padding: 21px;
   }
   .pricing {
-    width: 97vw;
+    width: 100%;
     margin-left: auto;
   }
   .plans h2 {
@@ -813,7 +813,7 @@ footer .social-icons {
     text-align: center;
   }
   .contact {
-    width: 97vw;
+    width: 100%;
     margin-left: 0;
   }
   .direct-contact {
@@ -827,7 +827,7 @@ footer .social-icons {
     padding-top: 56px;
   }
   footer {
-    width: 97vw;
+    width: 100%;
   }
   .social-icons {
     float: right;
@@ -884,7 +884,7 @@ footer .social-icons {
     margin-right: 50px;
   }
   .opening {
-    width: 97vw;
+    width: 100%;
     min-height: 800px;
     margin-top: 200px;
   }
@@ -908,7 +908,7 @@ footer .social-icons {
   }
   .after-bg1 {
     display: block;
-    width: 97vw;
+    width: 100%;
     margin-bottom: 100px;
     margin-top: 22px;
   }
@@ -930,7 +930,7 @@ footer .social-icons {
             align-items: flex-start;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 97vw;
+    width: 100%;
     margin: 0 0 50px 0;
     padding: 0 200px;
   }
@@ -939,8 +939,7 @@ footer .social-icons {
     padding: 21px;
   }
   .rectangles div {
-    background-color: var(--white-color);
-    width: 1100px;
+    width: 920px;
     height: 320px;
     margin: 42px auto;
   }
@@ -949,10 +948,10 @@ footer .social-icons {
     height: 180px;
     background-image: url(../images/Rectangle_5_desktop.png);
     background-size: contain;
-    margin-left: 850px;
+    margin-left: 730px;
   }
   .rectangles .rg1 .macbook {
-    margin-left: 630px;
+    margin-left: 510px;
     margin-top: 65px;
     width: 386px;
     height: 219px;
@@ -1010,7 +1009,6 @@ footer .social-icons {
     font-size: 30px;
     line-height: 35px;
     padding-top: 60px;
-    padding-right: 200px;
     padding-left: 650px;
     padding-bottom: 10px;
   }
@@ -1019,7 +1017,7 @@ footer .social-icons {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    padding: 10px 10px 20px 650px;
+    padding: 10px 10px 20px 570px;
   }
   .rg2 .vector {
     width: 330px;
@@ -1027,7 +1025,7 @@ footer .social-icons {
     background-image: url(../images/Vector_2_blue.png);
     background-repeat: no-repeat;
     margin-top: 22px;
-    margin-left: 650px;
+    margin-left: 550px;
   }
   .rg3 h3 {
     font-family: "Raleway";
@@ -1054,9 +1052,9 @@ footer .social-icons {
   }
   .rg3 .trumpet {
     height: 320px;
-    width: 450px;
-    margin-top: -289px;
-    margin-left: 650px;
+    width: 400px;
+    margin-top: -327px;
+    margin-left: 520px;
     background-color: #55dfb4;
     border-radius: 5px;
   }
@@ -1071,6 +1069,10 @@ footer .social-icons {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
+    max-width: 1800px;
+    margin: auto;
+    padding: 30px;
   }
   .plans h2 {
     margin-top: 50px;
@@ -1078,8 +1080,6 @@ footer .social-icons {
   .pricing .basic {
     width: 372px;
     height: 471px;
-    border: 1px solid var(--pink-color);
-    border-radius: 18px;
     -webkit-columns: 1;
     columns: 1;
   }
@@ -1097,15 +1097,16 @@ footer .social-icons {
     padding-top: 70px;
   }
   .basic .price-button {
-    padding: 16px 56px;
-    margin-top: 10px;
-    margin: 65px 0 0 110px;
+    top: 80%;
+    left: 20%;
   }
   .pricing .pro {
     width: 405px;
     height: 500px;
     -webkit-columns: 1;
     columns: 1;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .pro .plan {
     width: 125px;
@@ -1128,9 +1129,8 @@ footer .social-icons {
     padding-top: 70px;
   }
   .pro .price-button {
-    padding: 16px 56px;
-    margin-top: 10px;
-    margin: 30px 0 0 130px;
+    top: 76%;
+    left: 51%;
   }
   .pricing .premium {
     width: 372px;
@@ -1161,13 +1161,12 @@ footer .social-icons {
     padding-top: 40px;
   }
   .premium .price-button {
-    padding: 16px 56px;
-    margin-top: 10px;
-    margin: 30px 0 0 110px;
+    top: 80%;
+    left: 82%;
   }
   /*------------------------ C O N T A C T ------------------------*/
   .contact {
-    width: 97vw;
+    width: 100%;
     margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;

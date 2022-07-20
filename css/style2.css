@@ -5,7 +5,6 @@
   --blue-color: #07ace6;
   --blue-box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
   --green-color: #55dfb4;
-  --included: url(/images/included.png);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
@@ -33,6 +32,7 @@ nav ul {
   line-height: 2;
   color: #a5a5a5;
 }
+
 .selected {
   font-weight: 700;
   color: black;
@@ -841,14 +841,14 @@ footer .social-icons {
 }
 
 /*------------------------------- W I D T H  >  1 0 0 0 p x ------------------------------*/
-
-@media only screen and (min-width: 1000px) /*and (max-width: 1920px) */
-{
+@media only screen and (min-width: 1000px) {
   body {
     min-width: 100%;
   }
   .header {
     width: 100%;
+    height: 70px;
+    display: flex;
   }
   .header h1 {
     padding: 17px 144px 16px 136px;
@@ -857,19 +857,24 @@ footer .social-icons {
   .header i {
     display: none;
   }
-  
   .header nav {
     display: contents;
   }
   nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    padding: 0;
     height: 100%;
-    margin: -20px;
+    line-height: 5;
+    padding-top: 20px;
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-
+  .selected {
+    border-bottom: 5px solid var(--blue-color);
+  }
   .dropdown li {
     font-family: 'Open Sans';
     padding: 14px 16px;
@@ -878,7 +883,11 @@ footer .social-icons {
     line-height: 15px;
     margin-right: 50px;
   }
-
+  .opening {
+    width: 97vw;
+    min-height: 800px;
+    margin-top: 200px;
+  }
   .opening h2 {
     width: 100%;
     font-size: 49px;
@@ -888,10 +897,6 @@ footer .social-icons {
     font-size: 16px;
     line-height: 22px;
     padding: 22px 157px;
-  }
-  .opening {
-    width: 97vw;
-    min-height: 800px;
   }
   .background-1 {
     width: 100%;
@@ -913,10 +918,18 @@ footer .social-icons {
     line-height: 42px;
   }
   .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 97vw;
     margin: 0 0 50px 0;
     padding: 0 200px;
@@ -931,7 +944,6 @@ footer .social-icons {
     height: 320px;
     margin: 42px auto;
   }
-  
   .rectangles .rg1 .iframe {
     width: 180px;
     height: 180px;
@@ -939,17 +951,15 @@ footer .social-icons {
     background-size: contain;
     margin-left: 850px;
   }
-  
   .rectangles .rg1 .macbook {
     margin-left: 630px;
     margin-top: 65px;
-    width:386px;
-    height:219px;
+    width: 386px;
+    height: 219px;
     padding-left: 386px;
     background: url(../images/Macbook2_1.png);
     background-repeat: no-repeat;
   }
-  
   .rg1 h3 {
     font-family: "Raleway";
     font-weight: 400;
@@ -959,7 +969,6 @@ footer .social-icons {
     padding-left: 22px;
     padding-bottom: 10px;
   }
-  
   .rg1 p {
     font-family: "Open Sans";
     font-weight: 400;
@@ -985,7 +994,6 @@ footer .social-icons {
     position: absolute;
     z-index: 0;
   }
-  
   .rectangles .rg2 img {
     margin-left: 50px;
     margin-top: 30px;
@@ -996,7 +1004,6 @@ footer .social-icons {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  
   .rg2 h3 {
     font-family: "Raleway";
     font-weight: 400;
@@ -1007,7 +1014,6 @@ footer .social-icons {
     padding-left: 650px;
     padding-bottom: 10px;
   }
-  
   .rg2 p {
     font-family: "Open Sans";
     font-weight: 400;
@@ -1032,7 +1038,6 @@ footer .social-icons {
     padding-left: 22px;
     padding-bottom: 10px;
   }
-  
   .rg3 p {
     font-family: "Open Sans";
     font-weight: 400;
@@ -1050,26 +1055,26 @@ footer .social-icons {
   .rg3 .trumpet {
     height: 320px;
     width: 450px;
-    margin-top: -294px;
+    margin-top: -289px;
     margin-left: 650px;
     background-color: #55dfb4;
     border-radius: 5px;
   }
-  
   .rg3 .trumpet img {
     padding-top: 70px;
     padding-left: 50px;
   }
-
   .pricing {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .plans h2 {
     margin-top: 50px;
   }
-
   .pricing .basic {
     width: 372px;
     height: 471px;
@@ -1078,66 +1083,55 @@ footer .social-icons {
     -webkit-columns: 1;
     columns: 1;
   }
-  
   .basic .plan {
     padding-top: 34px;
     margin: auto auto;
   }
-  
   .basic .price {
     padding-top: 38px;
     margin: auto auto;
   }
-  
   .basic .text {
     text-align: center;
     line-height: 42px;
     padding-top: 70px;
   }
-  
   .basic .price-button {
     padding: 16px 56px;
     margin-top: 10px;
     margin: 65px 0 0 110px;
   }
-  
   .pricing .pro {
     width: 405px;
     height: 500px;
     -webkit-columns: 1;
     columns: 1;
   }
-  
   .pro .plan {
     width: 125px;
     padding-top: 34px;
     margin: auto auto;
   }
-  
   .pro .price {
     width: 93px;
     padding-top: 38px;
     margin: auto auto;
   }
-  
   .pro .offer {
     padding-top: 50px;
     text-align: center;
     margin: auto auto;
   }
-  
   .pro .text {
     text-align: center;
     line-height: 42px;
     padding-top: 70px;
   }
-  
   .pro .price-button {
     padding: 16px 56px;
     margin-top: 10px;
     margin: 30px 0 0 130px;
   }
-  
   .pricing .premium {
     width: 372px;
     height: 471px;
@@ -1145,49 +1139,55 @@ footer .social-icons {
     -webkit-columns: 1;
     columns: 1;
   }
-  
   .premium .plan {
     width: 87px;
     padding-top: 34px;
     margin: auto auto;
-  }  
+  }
   .premium .price {
     width: 85px;
     padding-top: 38px;
     margin: auto auto;
   }
-  
   .premium .offer {
     width: 74px;
     padding-top: 50px;
     text-align: center;
     margin: auto auto;
   }
-  
   .premium .text {
     text-align: center;
     line-height: 42px;
     padding-top: 40px;
   }
-  
   .premium .price-button {
     padding: 16px 56px;
     margin-top: 10px;
     margin: 30px 0 0 110px;
   }
-/************************* C O N T A C T ***********************/
+  /*------------------------ C O N T A C T ------------------------*/
   .contact {
     width: 97vw;
     margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   form {
     max-width: 360px;
     padding-top: 56px;
   }
+  .send-button {
+    margin-left: 130px;
+  }
   footer {
     width: 100%;
+  }
+  .footer-text {
+    margin-left: 100px;
   }
   .social-icons {
     float: right;
@@ -1195,9 +1195,7 @@ footer .social-icons {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 150px;
     margin-top: 50px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 * {
+  /*  border: 0.1px solid*/
   --white-color: #ffffff;
   --pink-color: #fb3b64;
   --blue-color: #07ace6;
@@ -6,139 +7,194 @@
   --green-color: #55dfb4;
   --included: url(/images/included.png);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  /*width: 320px*/
-  width: 375px;
+  width: 320px;
   font-family: sans-serif;
   background-color: var(--white-color);
   cursor: default;
 }
 
-.header {
-  min-width: 320px;
-  min-height: 70px;
-  /*line-height: 116%*/
-  left: 0px;
-  top: 0px;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+nav {
+  width: 375px;
 }
 
-.header .logo {
-  font-family: 'Raleway';
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 37px;
-  color: var(--blue-color);
+nav ul {
+  height: 175.65px;
+  padding-left: 25px;
+  padding-top: 40px;
+  list-style-type: none;
+  font-size: 11px;
+  letter-spacing: 4px;
+  line-height: 2;
+  color: #a5a5a5;
+}
+
+.selected {
+  font-weight: 700;
+  color: black;
+}
+
+.header h1 {
+  width: 206px;
+  height: 37px;
   padding: 17px 144px 16px 25px;
+  font-weight: 300;
+  line-height: 37px;
+  size: 32px;
 }
 
-.opening {
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background: var(--white-color);
+  color: #08a6e4;
+  font-family: "Raleway", sans-serif;
+  min-height: 70px;
+  min-width: 375px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+}
+
+.header input {
+  margin-right: 40px;
+}
+
+.header input,
+.header .fa-bars,
+.header .fa-times {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 15px;
+}
+
+.header .fa-bars,
+.header .fa-times {
+  font-size: 24px;
+  pointer-events: none;
+  margin-right: 40px;
+  width: 20px;
+  height: 20px;
+}
+
+.header input {
+  opacity: 0;
+  height: 25px;
+  width: 25px;
+  margin-right: 36px;
+}
+
+.header nav {
+  display: none;
+}
+
+.header input:checked ~ nav {
   display: block;
-  text-align: center;
-  padding: 100px 33px 51px;
 }
 
-.opening h1 {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 35px;
-  /*line-height: 100%*/
-  padding-bottom: 20px;
+.header input:checked ~ .fa-bars {
+  display: none;
+}
+
+.header input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+/*------------------------ O P E N I N G ---------------------*/
+.opening {
+  text-align: center;
+  height: 213px;
+  margin: 170px auto 0 auto;
 }
 
 .opening h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.opening p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
-  /*line-height: 144%*/
-  padding: 0 35px 28px;
+  line-height: 23px;
+  padding: 0 40px;
+  margin-bottom: 40px;
 }
 
 .opening .button {
-  background-color: var(--blue-color);
-  -webkit-box-shadow: var(--blue-box-shadow);
-          box-shadow: var(--blue-box-shadow);
-  color: var(--white-color);
-  border-radius: 40px;
-  border-style: none;
-  cursor: pointer;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 16px;
-  /*line-height: 138%*/
+  color: var(--white-color);
+  background-color: var(--blue-color);
   padding: 22px 92px;
+  border-radius: 40px;
+  -webkit-box-shadow: var(--blue-box-shadow);
+  box-shadow: var(--blue-box-shadow);
+  border-style: none;
+  cursor: pointer;
 }
 
-.background1 {
-  width: 375px;
+.background-1 {
+  width: 370px;
   height: 267px;
-  background-image: url(../images/Background_1.png);
+  background: url(../images/Background_1.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  margin: 40px 0 13px 0;
 }
 
 .after-bg1 {
   text-align: center;
   padding: 0 36px 25px 36px;
+  margin-top: 300px;
+  margin-bottom: 25px;
+}
+
+.after-bg1 h3 {
   font-family: "Raleway";
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
 }
 
-.column1 {
-  width: 117px;
-  height: 140px;
-  background-image: url(../images/Column_1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 129px 25px;
-  margin: 0 auto;
-}
-
-.column2 {
+.columns {
   width: 176px;
-  height: 167px;
-  background-image: url(../images/Column_2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 129px 25px;
-  margin: 25px auto;
+  margin-left: 100px;
+  text-align: center;
+  line-height: 70px;
 }
 
-.column3 {
-  width: 163px;
-  height: 168px;
-  background-image: url(../images/Column_3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 129px 25px;
-  margin: 0 auto 50px;
-}
-
-/*-----------------------------------------------------------------*/
-.rectangle3 {
+/*----------------------------- T A R J E T A S -----------------------------*/
+.rectangles {
+  width: 375px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  left: 0px;
   background: #f7f7f7;
-  /*-----WITHOUT THIS PADDING THERE IS NO DISTANCE AT TOP----*/
-  padding: 1px;
   border-radius: 5px;
+  padding: 21px;
 }
 
-.rectangle3 .cards {
+.rectangles div {
   background-color: var(--white-color);
   width: 314px;
-  height: 370px;
   margin: 42px auto;
-  border: 1px solid #E8E9ED;
-  border-radius: 5px;
 }
 
-.rectangle3 .group1 iframe {
+.rectangles .rg1 .iframe {
   width: 95px;
   height: 95px;
   background-image: url(../images/Rectangle_5.png);
@@ -150,13 +206,13 @@ body {
   z-index: 0;
 }
 
-.rectangle3 .group1 img {
+.rectangles .rg1 img {
   position: absolute;
   margin: 42px 60px 1px 30px;
   padding: 0 30px;
 }
 
-.rectangle3 .group1 h3 {
+.rg1 h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -166,7 +222,7 @@ body {
   padding-bottom: 10px;
 }
 
-.rectangle3 .group1 p {
+.rg1 p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
@@ -174,7 +230,7 @@ body {
   padding: 20px 22px 10px 22px;
 }
 
-.rectangle3 .group2 iframe {
+.rectangles .rg2 .iframe {
   width: 132px;
   height: 132px;
   background-image: url(../images/Ellipse_3.png);
@@ -186,13 +242,13 @@ body {
   z-index: 0;
 }
 
-.rectangle3 .group2 img {
+.rectangles .rg2 img {
   position: absolute;
   margin: 28px 50px 1px 70px;
   padding: 0 30px;
 }
 
-.rectangle3 .group2 h3 {
+.rg2 h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -203,7 +259,7 @@ body {
   padding-bottom: 10px;
 }
 
-.rectangle3 .group2 p {
+.rg2 p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
@@ -211,7 +267,7 @@ body {
   padding: 10px 22px 20px 22px;
 }
 
-.rectangle3 .group3 h3 {
+.rg3 h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -222,7 +278,7 @@ body {
   padding-bottom: 10px;
 }
 
-.rectangle3 .group3 p {
+.rg3 p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
@@ -230,31 +286,35 @@ body {
   padding: 10px 22px 0 22px;
 }
 
-.trumpet {
+.rg3 .trumpet {
   height: 195px;
-  background-color: var(--green-color);
+  background-color: #55dfb4;
   border-radius: 5px;
-  margin: -130px 31px 45px;
 }
 
-.trumpet img {
+.rg3 .trumpet img {
   padding-top: 25px;
 }
 
+/*------------------- P R I C I N G --------------------*/
 .pricing {
   background-color: var(--white-color);
   margin-top: 53px;
-  text-align: center;
+  margin-left: 41px;
+}
+
+.plans h2 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  margin-bottom: 14px;
 }
 
-.iconos {
+.pricing .iconos {
   font-weight: 300 !important;
-  font-size: 15px !important;
+  font-size: 16px !important;
 }
 
 .included {
@@ -267,17 +327,27 @@ body {
   padding-right: 10px;
 }
 
-.basic {
-  margin: 14px 41px 54px;
+.basic,
+.pro,
+.premium {
+  margin: auto;
+  margin-bottom: 54px;
+}
+
+.pricing .basic {
+  width: 293px;
+  height: 251px;
   border: 1px solid var(--pink-color);
   border-radius: 18px;
   -webkit-columns: auto 2;
-          columns: auto 2;
+  columns: auto 2;
 }
 
 .basic .plan {
-  padding-top: 70px;
-  padding-left: 50px;
+  margin-top: 70px;
+  margin-left: 50px;
+  width: 52px;
+  height: 24px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 20px;
@@ -286,7 +356,9 @@ body {
 }
 
 .basic .price {
-  margin-top: 1px;
+  width: 59px;
+  height: 64px;
+  margin-bottom: 92px;
   margin-left: 45px;
   font-family: "Open Sans";
   font-weight: 300;
@@ -301,14 +373,9 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
-  padding-top: 15px;
+  line-height: 38px;
+  padding-top: 25px;
   margin-left: -16px;
-  padding-bottom: 41px;
-}
-
-.basic .text p {
-  padding: 10px 0;
 }
 
 .basic .price-button {
@@ -317,7 +384,7 @@ body {
   background-color: var(--pink-color);
   border-radius: 23px;
   padding: 16px 56px;
-  margin-top: -25px;
+  margin-top: 10px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -327,19 +394,19 @@ body {
   cursor: pointer;
 }
 
-.professional {
+.pricing .pro {
   width: 339px;
   height: 277px;
   border: 1px solid var(--blue-color);
   border-radius: 18px;
-  margin: 54px 0 54px 18px;
+  /*margin: 54px 0 54px -23px------------------------------*/
   -webkit-box-shadow: var(--blue-box-shadow);
-          box-shadow: var(--blue-box-shadow);
+  box-shadow: var(--blue-box-shadow);
   -webkit-columns: auto 2;
-          columns: auto 2;
+  columns: auto 2;
 }
 
-.professional .plan {
+.pro .plan {
   margin-top: 70px;
   margin-left: 25px;
   width: 52px;
@@ -351,7 +418,7 @@ body {
   color: #13253b;
 }
 
-.professional .price {
+.pro .price {
   width: 59px;
   height: 64px;
   margin-bottom: 2px;
@@ -363,7 +430,7 @@ body {
   color: var(--blue-color);
 }
 
-.professional .offer {
+.pro .offer {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -371,22 +438,20 @@ body {
   line-height: 14px;
   color: #13253b;
   margin-left: 50px;
-  padding-bottom: 83px;
 }
 
-.professional .text {
+.pro .text {
   text-align: left;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 38px;
-  padding-top: 51px;
+  padding-top: 65px;
   margin-left: -16px;
-  padding-bottom: 45px;
 }
 
-.professional .price-button {
+.pro .price-button {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -394,8 +459,8 @@ body {
   background-color: var(--blue-color);
   border-radius: 23px;
   -webkit-box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-          box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-  margin-top: -20px;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  margin-top: 35px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -405,21 +470,20 @@ body {
   cursor: pointer;
 }
 
-.premium {
-  margin: 14px 41px 77px;
+.pricing .premium {
+  width: 293px;
+  height: 251px;
   border: 1px solid var(--green-color);
   border-radius: 18px;
   -webkit-columns: auto 2;
-          columns: auto 2;
-}
-
-.premium .plan-type {
-  padding-top: 70px;
-  padding-bottom: 85px;
+  columns: auto 2;
 }
 
 .premium .plan {
-  margin-left: 31px;
+  margin-top: 70px;
+  margin-left: 40px;
+  width: 52px;
+  height: 24px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 20px;
@@ -428,11 +492,13 @@ body {
 }
 
 .premium .price {
-  margin-left: 35px;
+  width: 59px;
+  height: 64px;
+  margin-left: 45px;
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 46px;
-  line-height: 62px;
+  line-height: 64px;
   color: var(--green-color);
 }
 
@@ -443,7 +509,7 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #13253b;
-  margin-left: 38px;
+  margin-left: 50px;
 }
 
 .premium .text {
@@ -452,14 +518,9 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
-  padding-top: 15px;
+  line-height: 38px;
+  padding-top: 60px;
   margin-left: -16px;
-  padding-bottom: 37px;
-}
-
-.premium .text p {
-  padding: 10px 0;
 }
 
 .premium .price-button {
@@ -469,7 +530,7 @@ body {
   color: #ffffff;
   background-color: var(--green-color);
   border-radius: 23px;
-  margin-top: -25px;
+  margin-top: 15px;
   margin-left: -80px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -479,6 +540,7 @@ body {
   cursor: pointer;
 }
 
+/*--------------------C O N T A C T  U S ------------------*/
 .contact {
   margin-top: 77px;
   margin-bottom: 44px;
@@ -486,7 +548,7 @@ body {
 }
 
 .direct-contact {
-  width: 280px;
+  width: 360px;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 16px;
@@ -523,15 +585,13 @@ body {
   vertical-align: middle;
 }
 
-.contact .input {
+.contact label {
   color: var(--blue-color);
   font-family: "Open Sans";
+  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 3.28px;
-  width: 80px;
-  height: 80px;
-  margin-top: 50px;
 }
 
 .direct-contact .our-mail,
@@ -562,8 +622,7 @@ body {
 .consent {
   display: block;
   position: relative;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 30px;
   margin-top: 30px;
   margin-bottom: 12px;
   letter-spacing: 0 !important;
@@ -574,7 +633,7 @@ body {
 .send-button {
   background-color: var(--blue-color);
   -webkit-box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-          box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
   border-style: none;
   margin-left: 80px;
@@ -629,7 +688,7 @@ body {
   border: solid var(--blue-color);
   border-width: 0 1.5px 1.5px 0;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .consent label {
@@ -647,17 +706,32 @@ body {
 }
 
 /*******************************************************************/
+.twitter {
+  position: absolute;
+  background-image: url(../images/Twitter.png);
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  position: absolute;
+  background-image: url(../images/Facebook.png);
+  width: 24px;
+  height: 24px;
+  margin-left: 40px;
+}
+
 footer {
-  background: #F7F7F7;
+  background: #f7f7f7;
   min-height: 89px;
   min-width: 375px;
   -webkit-box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
   padding-left: 17px;
   -webkit-columns: auto 2;
-          columns: auto 2;
+  columns: auto 2;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .footer-text h2 {
@@ -683,22 +757,435 @@ footer {
 }
 
 footer .social-icons {
-  position: absolute;
-  padding: 33px 30px 32px 250px;
+  padding: 33px 30px 32px 260px;
 }
 
-.twitter {
-  position: absolute;
-  background-image: url(../images/Twitter.png);
-  width: 24px;
-  height: 24px;
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  body {
+    min-width: 97vw;
+  }
+  .header {
+    width: 100%;
+  }
+  .opening {
+    width: 97vw;
+    min-height: 500px;
+  }
+  .background-1 {
+    width: 97vw;
+    background-image: url(../images/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .after-bg1 {
+    display: block;
+    width: 97vw;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+  }
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 97vw;
+    margin: 0 0 50px 0;
+  }
+  .rectangles {
+    width: 97vw;
+    padding: 21px;
+  }
+  .pricing {
+    width: 97vw;
+    margin-left: auto;
+  }
+  .plans h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contact {
+    width: 97vw;
+    margin-left: 0;
+  }
+  .direct-contact {
+    margin: 0 auto;
+  }
+  form {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding-top: 56px;
+  }
+  footer {
+    width: 97vw;
+  }
+  .social-icons {
+    float: right;
+    position: relative;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
 }
 
-.facebook {
-  position: absolute;
-  background-image: url(../images/Facebook.png);
-  width: 24px;
-  height: 24px;
-  margin-left: 50px;
+/*------------------------------- W I D T H  >  1 0 0 0 p x ------------------------------*/
+@media only screen and (min-width: 1000px) {
+  body {
+    min-width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .header h1 {
+    padding: 17px 144px 16px 136px;
+  }
+  .header input,
+  .header i {
+    display: none;
+  }
+  .header nav {
+    display: contents;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    height: 100%;
+    margin: -20px;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .dropdown li {
+    font-family: 'Open Sans';
+    padding: 14px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 50px;
+  }
+  .opening h2 {
+    width: 100%;
+    font-size: 49px;
+    line-height: 57px;
+  }
+  .opening .button {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 22px 157px;
+  }
+  .opening {
+    width: 97vw;
+    min-height: 800px;
+  }
+  .background-1 {
+    width: 100%;
+    min-height: 594px;
+    background-image: url(../images/Background.png);
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+  }
+  .after-bg1 {
+    display: block;
+    width: 97vw;
+    margin-bottom: 100px;
+    margin-top: 22px;
+  }
+  .after-bg1 h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 97vw;
+    margin: 0 0 50px 0;
+    padding: 0 200px;
+  }
+  .rectangles {
+    width: 100%;
+    padding: 21px;
+  }
+  .rectangles div {
+    background-color: var(--white-color);
+    width: 1100px;
+    height: 320px;
+    margin: 42px auto;
+  }
+  .rectangles .rg1 .iframe {
+    width: 180px;
+    height: 180px;
+    background-image: url(../images/Rectangle_5_desktop.png);
+    background-size: contain;
+    margin-left: 850px;
+  }
+  .rectangles .rg1 .macbook {
+    margin-left: 630px;
+    margin-top: 65px;
+    width: 386px;
+    height: 219px;
+    padding-left: 386px;
+    background: url(../images/Macbook2_1.png);
+    background-repeat: no-repeat;
+  }
+  .rg1 h3 {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 60px;
+    padding-left: 22px;
+    padding-bottom: 10px;
+  }
+  .rg1 p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 650px 10px 22px;
+  }
+  .rg1 .vector {
+    width: 330px;
+    height: 10px;
+    background-image: url(../images/Vector_2.png);
+    background-repeat: no-repeat;
+    margin: 30px 22px;
+  }
+  .rectangles .rg2 .iframe {
+    width: 280px;
+    height: 280px;
+    background-image: url(../images/Ellipse_3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 0;
+  }
+  .rectangles .rg2 img {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 363px;
+    height: 279px;
+    padding-left: 426px;
+    background: url(../images/iPhone2_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .rg2 h3 {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 60px;
+    padding-right: 200px;
+    padding-left: 650px;
+    padding-bottom: 10px;
+  }
+  .rg2 p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 10px 20px 650px;
+  }
+  .rg2 .vector {
+    width: 330px;
+    height: 10px;
+    background-image: url(../images/Vector_2_blue.png);
+    background-repeat: no-repeat;
+    margin-top: 22px;
+    margin-left: 650px;
+  }
+  .rg3 h3 {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 60px;
+    padding-left: 22px;
+    padding-bottom: 10px;
+  }
+  .rg3 p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 650px 10px 22px;
+  }
+  .rg3 .vector {
+    width: 330px;
+    height: 10px;
+    background-image: url(../images/Vector_3_green.png);
+    background-repeat: no-repeat;
+    margin: 40px 22px;
+  }
+  .rg3 .trumpet {
+    height: 320px;
+    width: 450px;
+    margin-top: -294px;
+    margin-left: 650px;
+    background-color: #55dfb4;
+    border-radius: 5px;
+  }
+  .rg3 .trumpet img {
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+  .pricing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plans h2 {
+    margin-top: 50px;
+  }
+  .pricing .basic {
+    width: 372px;
+    height: 471px;
+    border: 1px solid var(--pink-color);
+    border-radius: 18px;
+    -webkit-columns: 1;
+    columns: 1;
+  }
+  .basic .plan {
+    padding-top: 34px;
+    margin: auto auto;
+  }
+  .basic .price {
+    padding-top: 38px;
+    margin: auto auto;
+  }
+  .basic .text {
+    text-align: center;
+    line-height: 42px;
+    padding-top: 70px;
+  }
+  .basic .price-button {
+    padding: 16px 56px;
+    margin-top: 10px;
+    margin: 65px 0 0 110px;
+  }
+  .pricing .pro {
+    width: 405px;
+    height: 500px;
+    -webkit-columns: 1;
+    columns: 1;
+  }
+  .pro .plan {
+    width: 125px;
+    padding-top: 34px;
+    margin: auto auto;
+  }
+  .pro .price {
+    width: 93px;
+    padding-top: 38px;
+    margin: auto auto;
+  }
+  .pro .offer {
+    padding-top: 50px;
+    text-align: center;
+    margin: auto auto;
+  }
+  .pro .text {
+    text-align: center;
+    line-height: 42px;
+    padding-top: 70px;
+  }
+  .pro .price-button {
+    padding: 16px 56px;
+    margin-top: 10px;
+    margin: 30px 0 0 130px;
+  }
+  .pricing .premium {
+    width: 372px;
+    height: 471px;
+    border: 1px solid var(--green-color);
+    -webkit-columns: 1;
+    columns: 1;
+  }
+  .premium .plan {
+    width: 87px;
+    padding-top: 34px;
+    margin: auto auto;
+  }
+  .premium .price {
+    width: 85px;
+    padding-top: 38px;
+    margin: auto auto;
+  }
+  .premium .offer {
+    width: 74px;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto auto;
+  }
+  .premium .text {
+    text-align: center;
+    line-height: 42px;
+    padding-top: 40px;
+  }
+  .premium .price-button {
+    padding: 16px 56px;
+    margin-top: 10px;
+    margin: 30px 0 0 110px;
+  }
+  /*------------------------ C O N T A C T ------------------------*/
+  .contact {
+    width: 97vw;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    max-width: 360px;
+    padding-top: 56px;
+  }
+  footer {
+    width: 100%;
+  }
+  .social-icons {
+    float: right;
+    position: relative;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

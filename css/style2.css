@@ -33,6 +33,12 @@ nav ul {
   color: #a5a5a5;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 .selected {
   font-weight: 700;
   color: black;
@@ -394,6 +400,7 @@ nav ul {
 }
 
 .pricing .pro {
+  position: relative;
   width: 339px;
   height: 277px;
   border: 1px solid var(--blue-color);
@@ -452,8 +459,7 @@ nav ul {
 
 .pro .price-button {
   position: absolute;
-  width: 150px;
-  height: 50px;
+  padding: 16px 56px;
   color: #ffffff;
   background-color: var(--blue-color);
   border-radius: 23px;
@@ -470,6 +476,7 @@ nav ul {
 }
 
 .pricing .premium {
+  position: relative;
   width: 293px;
   height: 251px;
   border: 1px solid var(--green-color);
@@ -524,8 +531,7 @@ nav ul {
 
 .premium .price-button {
   position: absolute;
-  width: 150px;
-  height: 50px;
+  padding: 16px 56px;
   color: #ffffff;
   background-color: var(--green-color);
   border-radius: 23px;
@@ -808,6 +814,7 @@ footer .social-icons {
     width: 100%;
     margin-left: auto;
   }
+  
   .plans h2 {
     margin-top: 50px;
     text-align: center;
@@ -1051,7 +1058,7 @@ footer .social-icons {
   .rg3 .trumpet {
     height: 320px;
     width: 400px;
-    margin-top: -327px;
+    margin-top: -333px;
     margin-left: 520px;
     background-color: #55dfb4;
     border-radius: 5px;
@@ -1076,6 +1083,7 @@ footer .social-icons {
     margin-top: 50px;
   }
   .pricing .basic {
+    position: relative;
     width: 372px;
     height: 471px;
     -webkit-columns: 1;
@@ -1095,8 +1103,8 @@ footer .social-icons {
     padding-top: 70px;
   }
   .basic .price-button {
-    top: 80%;
-    left: 20%;
+    top: 92%;
+    left: 52%;
   }
   .pricing .pro {
     width: 405px;
@@ -1127,7 +1135,7 @@ footer .social-icons {
     padding-top: 70px;
   }
   .pro .price-button {
-    top: 76%;
+    top: 87%;
     left: 51%;
   }
   .pricing .premium {
@@ -1159,8 +1167,8 @@ footer .social-icons {
     padding-top: 40px;
   }
   .premium .price-button {
-    top: 80%;
-    left: 82%;
+    top: 91%;
+    left: 53%;
   }
   /*------------------------ C O N T A C T ------------------------*/
   .contact {
